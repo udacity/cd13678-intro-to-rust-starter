@@ -16,8 +16,8 @@ build:
 	gcc -c -fPIC $(OPENGL_WRAPPER_LIB_SRC) -o $(OPENGL_WRAPPER_LIB_OBJ) # Compile source file
 	gcc -shared -o $(OPENGL_WRAPPER_LIB_SO) $(OPENGL_WRAPPER_LIB_OBJ) -lglfw -lGL # Create shared library
 
-.PHONY: run
-run: build
+.PHONY: run-c
+run-c: build
 	@echo "Running Test Game..."
 	gcc $(TEST_GAME_SRC) -o $(TEST_GAME_EXE) -L$(OUTPUT_DIR) -l$(OPENGL_WRAPPER_LIB) -Wl,-rpath,$(OUTPUT_DIR) # Compile source file
 	$(TEST_GAME_EXE) # Run the test game
