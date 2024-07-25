@@ -21,3 +21,12 @@ run: build
 	@echo "Running Test Game..."
 	gcc $(TEST_GAME_SRC) -o $(TEST_GAME_EXE) -L$(OUTPUT_DIR) -l$(OPENGL_WRAPPER_LIB) -Wl,-rpath,$(OUTPUT_DIR) # Compile source file
 	$(TEST_GAME_EXE) # Run the test game
+
+.PHONY: test-rust
+test-rust:
+	@echo "Running Rust Tests Serially..."
+	cargo test --manifest-path ./my_game_engine/Cargo.toml tests::test_simple_game_loop -- --nocapture --ignored
+	cargo test --manifest-path ./my_game_engine/Cargo.toml tests::test_sprite_rendering -- --nocapture --ignored
+	cargo test --manifest-path ./my_game_engine/Cargo.toml tests::test_screen_clearing -- --nocapture --ignored
+	cargo test --manifest-path ./my_game_engine/Cargo.toml tests::test_key_presses -- --nocapture --ignored
+	cargo test --manifest-path ./my_game_engine/Cargo.toml tests::test_sprite_position_update -- --nocapture --ignored
