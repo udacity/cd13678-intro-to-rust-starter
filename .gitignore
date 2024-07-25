@@ -1,0 +1,9 @@
+# Ignore IDE specific files
+.idea/
+
+# Ignores all object files and shared libraries
+**/**.o
+**/**.so
+
+# Ingore test_game executable
+starter/c_output/test_game_exe
