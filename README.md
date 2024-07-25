@@ -17,46 +17,41 @@ git clone https://github.com/udacity/intro-to-rust-starter.git
 # or, git clone git@github.com:udacity/intro-to-rust-starter.git
 ```
 
-I
+For this project, you'll need to have Rust installed in your machine. If you haven't installed Rust yet, you can do so with:
 
-
-### Dependencies
-
-
-
-### Installation
-
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
-```
-Give an example here
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-## Testing
+Also, because we are dealing with C code in this project, you'll need to have a C compiler installed on your machine. You can install the `build-essential` package, which includes the GNU C Compiler (GCC) and other necessary tools:
 
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
+```bash
+sudo apt update
+sudo apt install build-essential
 ```
 
-## Project Instructions
+Finally, you'll need to have GLFW installed in your machine. GLFW is a C library that will be the foundation of our game engine. You can install it with:
 
-This section should contain all the student deliverables for this project.
+```bash
+sudo apt install libglfw3 libglfw3-dev
+```
 
-## Built With
+### Running the Test C Game
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
+To ensure you are set up correctly, you can run the test C game that comes with this project. You can build and run the test game with:
 
-Include all items used to build project.
+```bash
+cd intro-to-rust-starter/starter
+make run
+```
+
+You should see the following pop-up window:
+
+![readme_image_assets/img.png](readme_image_assets/img.png)
+
+### Starting the Rust Game Engine
+
+With this done, we are ready to start creating our game engine project. Inside the `starter` folder, create a new Rust project called `my_game_engine` (or whatever name you prefer), and then refer to the project instructions in the Udacity website to start building your game engine.
 
 ## License
 
