@@ -41,11 +41,6 @@ Sprite* create_sprite(float x, float y, int width, int height, int r, int g, int
     return sprite;
 }
 
-// Function to destroy a sprite
-void destroy_sprite(Sprite *sprite) {
-    free(sprite);
-}
-
 // Function to render a sprite
 void render_sprite(Sprite *sprite) {
     // Convert sprite position and size to window coordinates
@@ -83,12 +78,6 @@ void clear_screen() {
 // Function to check if the window should close
 int window_should_close() {
     return glfwWindowShouldClose(window);
-}
-
-// Function to terminate GLFW
-void terminate_game_window() {
-    glfwDestroyWindow(window);
-    glfwTerminate();
 }
 
 // Function to get key state

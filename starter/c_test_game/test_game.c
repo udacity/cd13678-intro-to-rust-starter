@@ -22,10 +22,5 @@ int main() {
         update_game_window();
     }
 
-    // Cleanup
-    destroy_sprite(sprite);
-    destroy_sprite(sprite2);
-    terminate_game_window();
-
     return 0;
 }

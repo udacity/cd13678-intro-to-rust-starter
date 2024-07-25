@@ -17,9 +17,6 @@ void create_game_window(const char *title, int width, int height);
 // Function to create a sprite
 Sprite* create_sprite(float x, float y, int width, int height, int r, int g, int b);
 
-// Function to destroy a sprite
-void destroy_sprite(Sprite *sprite);
-
 // Function to render a sprite
 void render_sprite(Sprite *sprite);
 
@@ -34,9 +31,6 @@ void clear_screen();
 
 // Function to check if the window should close
 int window_should_close();
-
-// Function to terminate GLFW
-void terminate_game_window();
 
 // Function to get key state
 int get_key(GLFWwindow* window, int key);
