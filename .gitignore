@@ -2,8 +2,11 @@
 .idea/
 
 # Ignores all object files and shared libraries
-**/**.o
-**/**.so
+*.o
+*.so
 
 # Ingore test_game executable
-starter/c_output/test_game_exe
+project/solution/c_output/test_game_exe
+
+# Ignore Rust target directory
+**target/
