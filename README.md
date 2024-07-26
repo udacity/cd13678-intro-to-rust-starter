@@ -51,7 +51,7 @@ You should see the following pop-up window:
 
 ### Starting the Rust Game Engine
 
-With this done, we are ready to start creating our game engine project. Inside the `starter` folder, create a new Rust project called `my_game_engine` (or whatever name you prefer), and then refer to the project instructions in the Udacity website to start building your game engine.
+With this done, we are ready to start creating our game engine project. Inside the `starter` folder, create a new Rust library project called `my_game_engine` (or whatever name you prefer), and then refer to the project instructions in the Udacity website to start building your game engine.
 
 > Note: If you choose another name for your engine, you must update the references to `my_game_engine` in the `starter` folder's `Makefile` to reflect the new name.
 
