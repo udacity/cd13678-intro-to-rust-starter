@@ -4,18 +4,11 @@ This repository serves as the starting point for building a simple yet functiona
 
 ## Getting Started
 
-When working on this project, you can choose between utilizing Udacity's workspace environment or setting it all up on your local machine. If you prefer to use the workspace, you can skip the prerequisite steps and jump straight to the project instructions. Otherwise, follow the steps below to set up your local development environment.
+When working on this project, you can choose between utilizing Udacity's VM environment or setting it all up on your local machine. If you prefer to use the Udacity VM, you can skip the local environment prerequisite steps and jump straight to the project instructions.
 
-### Prerequisites
+### Local environment prerequisites
 
 While this project has no specific dependencies on any system, it was built on a Unix-based machine. So, if you're on Windows, I'd recommend using the Windows Subsystem for Linux (WSL), so all instructions here directly apply to your system.  
-
-To start with your project, clone this repository to your local machine:
-
-```bash
-git clone https://github.com/udacity/intro-to-rust-starter.git
-# or, git clone git@github.com:udacity/intro-to-rust-starter.git
-```
 
 For this project, you'll need to have Rust installed in your machine. If you haven't installed Rust yet, you can do so with:
 
@@ -38,11 +31,18 @@ sudo apt install libglfw3 libglfw3-dev
 
 ### Running the Test C Game
 
+To start with your project, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/udacity/intro-to-rust-starter.git
+# or, git clone git@github.com:udacity/intro-to-rust-starter.git
+```
+
 To ensure you are set up correctly, you can run the test C game that comes with this project. You can build and run the test game with:
 
 ```bash
 cd intro-to-rust-starter/starter
-make run
+make run-c
 ```
 
 You should see the following pop-up window:
